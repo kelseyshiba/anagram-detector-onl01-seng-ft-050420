@@ -22,6 +22,7 @@ class Anagram
     list.select do |words|
       letters = words.split("").sort 
       if letters == word.split("").sort
+        words
       end
     end
   end
