@@ -19,7 +19,7 @@ class Anagram
   # end
   
   def match(list)
-    list.collect do |words|
+    list.select do |words|
       letters = words.split("").sort 
       if letters == word.split("").sort
       end
